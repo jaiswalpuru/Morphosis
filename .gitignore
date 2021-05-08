@@ -16,3 +16,6 @@
 
 #Mac_Junk
 .DS_Store
+
+# Server
+ngrok
