@@ -11,7 +11,7 @@ import (
 
 func GetImages(w http.ResponseWriter, r *http.Request) {
 
-	rand.Seed(time.Now().UTC().Local().Unix())
+	rand.Seed(time.Now().UTC().Local().UnixNano())
 
 	files, err := ioutil.ReadDir("static/img")
 	if err != nil {
